@@ -1,0 +1,85 @@
+body {
+  background-image: url(/Assets/stars5.gif);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+}
+
+.checkers {
+  position: fixed;
+  bottom: 0;
+  left: 174px;
+  right: 0;
+  height: 50%;
+  width: auto;
+  min-width: calc(100% - 155px);
+}
+
+.header {
+  background-color: rgb(56, 56, 56);
+  position: fixed;
+  height: 140px;
+  top: 0;
+  left: 174px;
+  right: 0;
+  z-index: 100;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  border-bottom-width: 15px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(28, 28, 28);
+  align-items: center;
+  justify-content: center;
+}
+
+.header div {
+  font-size: clamp(18px, 5vw, 50px);
+  font-weight: 600;
+  text-shadow: 3px 2px 6px black;
+  text-wrap-mode: nowrap;
+}
+
+.logo {
+  height: clamp(50px, 10vw, 100px);
+  margin-left: 30px;
+}
+
+.sidebar {
+  position: fixed;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgb(28, 28, 28);
+  width: 140px;
+  border-right-width: 15px;
+  border-right-style: solid;
+  border-right-color: rgb(17, 17, 17);
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  overflow: auto;
+  scrollbar-color: rgb(17, 17, 17) rgb(32, 32, 32);
+}
+
+.sidebar-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.sidebar-button img {
+  margin-bottom: 4px;
+}
+
+.sidebar-button div {
+  font-size: 24px;
+  color: white;
+  font-weight: 600;
+}
