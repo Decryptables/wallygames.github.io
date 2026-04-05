@@ -4,6 +4,8 @@ body {
   background-attachment: fixed;
   margin: 0;
   font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+  touch-action: none;
+  overflow-y: hidden; /* apparently this disables mobile refreshing? */
 }
 
 .checkers {
